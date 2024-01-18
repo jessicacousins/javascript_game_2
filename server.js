@@ -9,7 +9,9 @@ app.use(cors());
 const PORT = process.env.PORT || 5000;
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/pizzaOrderDB", { useNewUrlParser: true });
+mongoose.connect("mongodb://127.0.0.1:27017/pizzaOrderDB", {
+  useNewUrlParser: true,
+});
 
 const orderSchema = new mongoose.Schema({
   name: String,
@@ -26,8 +28,14 @@ app.post("/api/orders", (req, res) => {
   const newOrder = new Order(req.body);
   newOrder
     .save()
-    .then((order) => res.json(order))
-    .catch((err) => res.status(400).json("Error: " + err));
+    .then((order) => {
+      console.log("New order received:", order);
+      res.json(order);
+    })
+    .catch((err) => {
+      console.error("Error saving order:", err);
+      res.status(400).json("Error: " + err);
+    });
 });
 
 app.listen(PORT, () => {

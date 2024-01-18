@@ -23,4 +23,5 @@ node server.js
 - add more pizza options
 - add side menu items
 - generate AI photos for each menu item
-- checkout layout form
+- checkout layout form style
+- fix backend connection - have it print in the console when order is completed. Test with Postman.
