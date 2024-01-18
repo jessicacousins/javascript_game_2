@@ -8,6 +8,15 @@ This interactive flip menu displays the different order items for a pizza restau
 
 - Bootstrap
 - Google Fonts: 'Abril Fatface'
+- `npm install express mongoose body-parser cors`
+
+## Backend
+
+Run the backend server with:
+
+```
+node server.js
+```
 
 ## TODO:
 
