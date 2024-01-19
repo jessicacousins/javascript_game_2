@@ -15,6 +15,10 @@ backend - MongoDB
 - `npm install mongodb`
 - `npm install dotenv`
 
+## Frontend
+
+- Open the extension "Live Server"
+
 ## Backend
 
 Run the backend server with:
