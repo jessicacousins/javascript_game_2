@@ -23,6 +23,29 @@ Run the backend server with:
 node server.js
 ```
 
+## Tested with Postman with a POST request at http://localhost:5000/api/orders
+
+```
+{
+  "name": "John Doe",
+  "address": "123 Maple Street",
+  "contact": "555-1234",
+  "instructions": "Leave on the porch",
+  "items": [
+    {
+      "pizza": "cheese",
+      "quantity": 2
+    },
+    {
+      "pizza": "pepperoni",
+      "quantity": 1
+    }
+  ],
+  "total": 50.97
+}
+
+```
+
 ## TODO:
 
 - add more pizza options
