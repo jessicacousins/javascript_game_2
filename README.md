@@ -4,11 +4,16 @@
 
 This interactive flip menu displays the different order items for a pizza restaurant.
 
+frontend - HTML CSS JavaScript
+backend - MongoDB
+
 ## Dependencies
 
 - Bootstrap
 - Google Fonts: 'Abril Fatface'
 - `npm install express mongoose body-parser cors`
+- `npm install mongodb`
+- `npm install dotenv`
 
 ## Backend
 
@@ -24,4 +29,5 @@ node server.js
 - add side menu items
 - generate AI photos for each menu item
 - checkout layout form style
-- fix backend connection - have it print in the console when order is completed. Test with Postman.
+- flip frontend to Next.js
+- add Stripe payments options
