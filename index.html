@@ -13,62 +13,80 @@
     />
   </head>
   <body>
-    <header class="text-center">Pizza Menu</header>
+    <div class="discount">10% OFF Your First Online Order!</div>
+    <div class="welcome-section">
+      <img src="pizzaSlice.png" alt="Slice of Pizza" class="pizzaSlice" />
+      <h1 class="welcome-text">Pizza Restaurant</h1>
+      <header class="text-center">Pizza Menu</header>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#hours">Hours</a></li>
+      </ul>
+    </nav>
 
     <article>
-      <h2>
-        Welcome to [Pizza Shop], our passon is crafting the perfect pizza with
-        using only the freshest high quality ingredients from our partners in
-        the local community!
-      </h2>
-      <p class="howToOrder">
-        Explore our menu by click on the pizza images below. Each pizza is a
-        masterpiece and can be selected by using the + or - buttons.
-      </p>
+      <div id="about">
+        <h2>
+          Welcome to [Pizza Shop], our passon is crafting the perfect pizza with
+          using only the freshest high quality ingredients from our partners in
+          the local community!
+        </h2>
+        <p class="howToOrder">
+          Explore our menu by click on the pizza images below. Each pizza is a
+          masterpiece and can be selected by using the + or - buttons.
+        </p>
+      </div>
 
-      <div class="col">
-        <div class="col-auto">
-          <div id="menuContainer" class="container container-fluid">
-            <div id="cheese" class="pizzaType">
-              <h3 class="pizzaTitle">Cheese</h3>
-              <h4 class="pizzaPrice">$15.99</h4>
-              <img
-                class="img-fluid"
-                src="chesse_pizza.jpg"
-                alt="Cheese Pizza"
-              />
-              <div class="quantity-control">
-                <button class="minus">-</button>
-                <span class="quantity">0</span>
-                <button class="plus">+</button>
+      <div id="menu">
+        <div class="col">
+          <div class="col-auto">
+            <div id="menuContainer" class="container container-fluid">
+              <div id="cheese" class="pizzaType">
+                <h3 class="pizzaTitle">Cheese</h3>
+                <h4 class="pizzaPrice">$15.99</h4>
+                <img
+                  class="img-fluid"
+                  src="chesse_pizza.jpg"
+                  alt="Cheese Pizza"
+                />
+                <div class="quantity-control">
+                  <button class="minus">-</button>
+                  <span class="quantity">0</span>
+                  <button class="plus">+</button>
+                </div>
               </div>
-            </div>
-            <div id="pepperoni" class="pizzaType">
-              <h3 class="pizzaTitle">Pepperoni</h3>
-              <h4 class="pizzaPrice">$18.99</h4>
-              <img
-                class="img-fluid"
-                src="pepperoni_pizza.jpg"
-                alt="Pepperoni Pizza"
-              />
-              <div class="quantity-control">
-                <button class="minus">-</button>
-                <span class="quantity">0</span>
-                <button class="plus">+</button>
+              <div id="pepperoni" class="pizzaType">
+                <h3 class="pizzaTitle">Pepperoni</h3>
+                <h4 class="pizzaPrice">$18.99</h4>
+                <img
+                  class="img-fluid"
+                  src="pepperoni_pizza.jpg"
+                  alt="Pepperoni Pizza"
+                />
+                <div class="quantity-control">
+                  <button class="minus">-</button>
+                  <span class="quantity">0</span>
+                  <button class="plus">+</button>
+                </div>
               </div>
-            </div>
-            <div id="veggie" class="pizzaType">
-              <h3 class="pizzaTitle">Veggie</h3>
-              <h4 class="pizzaPrice">$17.99</h4>
-              <img
-                class="img-fluid"
-                src="veggie_pizza.jpg"
-                alt="Veggie Pizza"
-              />
-              <div class="quantity-control">
-                <button class="minus">-</button>
-                <span class="quantity">0</span>
-                <button class="plus">+</button>
+              <div id="veggie" class="pizzaType">
+                <h3 class="pizzaTitle">Veggie</h3>
+                <h4 class="pizzaPrice">$17.99</h4>
+                <img
+                  class="img-fluid"
+                  src="veggie_pizza.jpg"
+                  alt="Veggie Pizza"
+                />
+                <div class="quantity-control">
+                  <button class="minus">-</button>
+                  <span class="quantity">0</span>
+                  <button class="plus">+</button>
+                </div>
               </div>
             </div>
           </div>
@@ -76,7 +94,7 @@
       </div>
 
       <div class="sideBySide">
-        <aside class="checkoutSection">
+        <aside id="order" class="checkoutSection">
           <h2>Checkout</h2>
           <ul class="checkoutList">
             <div>Order Items:</div>
@@ -90,16 +108,19 @@
           <button class="btn btn-warning">Reset Order</button>
         </aside>
 
-        <aside class="contactArea">
+        <aside id="hours" class="contactArea">
           <div class="contactInfo">
             <p>Contact ###-###-####</p>
             <p>Address: 123 Main Street</p>
             <p>Citytown USA</p>
+            <p>Monday - Saturday 11:30am - 11:00pm</p>
+            <p>Sunday 11:30am - 7:00pm</p>
           </div>
         </aside>
       </div>
     </article>
 
+    <footer>Jessica Cousins | Copyright 2024</footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
