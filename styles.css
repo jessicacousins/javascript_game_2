@@ -80,25 +80,39 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+}
+
 .welcomeMessage {
   display: flex;
+  line-height: 1.6;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 700px;
   font-size: 2.3rem;
   letter-spacing: 2px;
+  padding-right: 20px;
+  margin: 20px;
+  border: 10px dotted #f0ad4e;
 }
 
 .howToOrder {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 700px;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   letter-spacing: 2px;
-  font-style: italic;
+  padding-left: 20px;
+  margin: 20px;
 }
 
 .pizzaMenu {
