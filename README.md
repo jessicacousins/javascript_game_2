@@ -53,7 +53,7 @@ node server.js
 ## TODO:
 
 - add more pizza options
-- add side menu items
+- pop out full menu - link items from both menu options together
 - generate AI photos for each menu item
 - checkout layout form style
 - flip frontend to Next.js
