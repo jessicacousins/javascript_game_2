@@ -24,6 +24,30 @@
   height: auto;
   border-radius: 0%;
   cursor: default;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 .welcome-text {
@@ -56,6 +80,10 @@ nav {
   color: white;
   padding: 10px;
   text-align: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav ul {
@@ -80,7 +108,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-.about-section {
+/* .about-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,6 +141,191 @@ nav ul li a:hover {
   letter-spacing: 2px;
   padding-left: 20px;
   margin: 20px;
+} */
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  align-items: center;
+  padding-top: 60px;
+}
+
+.welcomeMessage {
+  display: flex;
+  line-height: 1.6;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* width: 700px; */
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  padding-right: 20px;
+  margin: 20px;
+  border: 10px dotted #f0ad4e;
+}
+
+.pizzaShop {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  border-radius: 0;
+  cursor: default;
+  height: auto;
+  -webkit-animation: flow-top 5s ease-out both;
+  animation: flow-top 5s ease-out both;
+}
+
+@-webkit-keyframes flow-top {
+  0% {
+    -webkit-transform: scale(0.9); 
+    transform: scale(0.9); 
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1); 
+    transform: scale(1);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+@keyframes flow-top {
+  0% {
+    -webkit-transform: scale(0.9); 
+    transform: scale(0.9); 
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1); 
+    transform: scale(1);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+.howToOrder {
+  display: flex;
+  /* flex: 1; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* width: 700px; */
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  margin: 20px;
+}
+
+.fullMenuBtn {
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both;
+}
+
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
 }
 
 .pizzaMenu {
