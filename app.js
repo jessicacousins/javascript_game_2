@@ -29,14 +29,21 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("order", JSON.stringify(order));
   };
 
+  const updateQuantityInAllMenus = (pizzaType, newQuantity) => {
+    document.querySelector(`#${pizzaType} .quantity`).textContent = newQuantity;
+    document.querySelector(`#${pizzaType}Modal .quantity`).textContent =
+      newQuantity;
+  };
+
   const updateQuantity = (element, delta) => {
     let pizzaType = element.closest(".pizzaType").id;
-    let quantitySpan = element.parentNode.querySelector(".quantity");
-    let currentQuantity = parseInt(quantitySpan.textContent) || 0;
+    let currentQuantity =
+      parseInt(document.querySelector(`#${pizzaType} .quantity`).textContent) ||
+      0;
     let newQuantity = currentQuantity + delta;
 
     if (newQuantity >= 0) {
-      quantitySpan.textContent = newQuantity;
+      updateQuantityInAllMenus(pizzaType, newQuantity);
       order[pizzaType] = newQuantity;
       updateCheckout();
     }
@@ -67,6 +74,25 @@ document.addEventListener("DOMContentLoaded", function () {
         let nextPizzaIndex = (pizzas.indexOf(currentPizza) + 1) % pizzas.length;
         currentPizza = pizzas[nextPizzaIndex];
         flipPizza(currentPizza);
+      }
+    });
+
+  document
+    .getElementById("menuModal")
+    .addEventListener("click", function (event) {
+      if (
+        event.target.classList.contains("modal-plus") ||
+        event.target.classList.contains("modal-minus")
+      ) {
+        let pizzaType = event.target.dataset.pizzaType;
+        updateQuantity(
+          document.querySelector(
+            `#${pizzaType} .${
+              event.target.classList.contains("modal-plus") ? "plus" : "minus"
+            }`
+          ),
+          event.target.classList.contains("modal-plus") ? 1 : -1
+        );
       }
     });
 

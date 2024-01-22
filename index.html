@@ -156,14 +156,25 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="cheesePizzaFull">
+            <div id="cheeseModal" class="cheesePizzaFull">
               <p>Cheese Pizza</p>
               <button class="modal-minus" data-pizza-type="cheese">-</button>
               <span class="quantity">0</span>
               <button class="modal-plus" data-pizza-type="cheese">+</button>
             </div>
+            <div id="pepperoniModal" class="pepperoniPizzaFull">
+              <p>Pepperoni Pizza</p>
+              <button class="modal-minus" data-pizza-type="pepperoni">-</button>
+              <span class="quantity">0</span>
+              <button class="modal-plus" data-pizza-type="pepperoni">+</button>
+            </div>
+            <div id="veggieModal" class="veggiePizzaFull">
+              <p>Veggie Pizza</p>
+              <button class="modal-minus" data-pizza-type="veggie">-</button>
+              <span class="quantity">0</span>
+              <button class="modal-plus" data-pizza-type="veggie">+</button>
+            </div>
           </div>
-
           <div class="modal-footer">
             <button
               type="button"
@@ -172,7 +183,9 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Order Now</button>
+            <button class="btn btn-success" onclick="location.href='form.html'">
+              Check Out
+            </button>
           </div>
         </div>
       </div>
