@@ -4,13 +4,14 @@
 
 This interactive flip menu displays the different order items for a pizza restaurant.
 
-frontend - HTML CSS JavaScript
-backend - MongoDB
+- frontend - HTML CSS JavaScript
+- backend - MongoDB
 
 ## Dependencies
 
 - Bootstrap
 - Google Fonts: 'Abril Fatface'
+- Google Icons
 - `npm install express mongoose body-parser cors`
 - `npm install mongodb`
 - `npm install dotenv`
