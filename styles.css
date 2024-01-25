@@ -355,6 +355,15 @@ img {
   padding: 0;
 }
 
+.checkoutTitle {
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+.total {
+  color: #f0ad4e;
+}
+
 .checkoutSection h2,
 .checkoutSection ul,
 .checkoutSection button {
