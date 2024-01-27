@@ -368,6 +368,14 @@ img {
   text-align: left;
 } */
 
+.pizzaDeal1 {
+  border: 3px dotted #f0ad4e;
+}
+
+.pizzaDeal2 {
+  border: 3px dotted #f0ad4e;
+}
+
 .checkoutSection {
   position: fixed;
   top: 700px;
