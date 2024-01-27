@@ -185,7 +185,7 @@ nav ul li a:hover {
   margin: 20px;
   border: 1px solid #f0ad4e;
   box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
+  border-radius: 7px;
 }
 
 .pizzaShop {
@@ -263,8 +263,11 @@ nav ul li a:hover {
 }
 
 .card-title {
+  font-size: 3.5rem;
   text-decoration: underline;
   background-color: #222;
+  letter-spacing: 2px;
+  margin-bottom: 40px !important;
 }
 
 @keyframes wiggle {
@@ -359,25 +362,58 @@ img {
   text-align: center;
 }
 
-.checkoutSection {
+/* .checkoutSection {
   background-color: #000;
   padding: 20px;
   text-align: left;
+} */
+
+.checkoutSection {
+  position: fixed;
+  top: 700px;
+  right: 20px;
+  width: 100px;
+  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: auto;
+  max-height: 80vh;
+  border: 2px solid #f0ad4e;
+}
+
+@media screen and (max-width: 767.98px) {
+  .checkoutSection {
+    top: 270px;
+  }
+}
+
+.checkoutTitle {
+  font-size: 4rem;
+  text-decoration: underline;
+  color: #f0ad4e;
+  background-color: transparent;
 }
 
 .checkoutList {
   font-size: 1.5em;
   list-style: none;
   padding: 0;
+  background-color: transparent;
 }
-
-.checkoutTitle {
-  font-size: 4rem;
-  text-decoration: underline;
+.orderItemTitle {
+  background-color: transparent;
+}
+.orderItem {
+  background-color: transparent;
 }
 
 .total {
   color: #f0ad4e;
+  background-color: transparent;
 }
 
 .checkoutSection h2,
@@ -385,11 +421,6 @@ img {
 .checkoutSection button {
   margin-left: 20px;
   font-size: 1.7rem;
-}
-
-.sideBySide {
-  display: flex;
-  justify-content: space-between;
 }
 
 .checkoutSection,
@@ -410,13 +441,13 @@ img {
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
-    background-color: #000;
+    /* background-color: #000; */
   }
 
   .checkoutSection,
   .contactArea {
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
     margin-top: 0;
   }
 }
@@ -427,13 +458,13 @@ img {
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
-    background-color: #000;
+    /* background-color: #000; */
   }
 
   .checkoutSection,
   .contactArea {
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
     margin-top: 0;
   }
 }
@@ -443,13 +474,13 @@ img {
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
-    background-color: #000;
+    /* background-color: #000; */
   }
 
   .checkoutSection,
   .contactArea {
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
     margin-top: 0;
   }
 }

@@ -54,8 +54,9 @@ node server.js
 ## TODO:
 
 - add more pizza options
-- pop out full menu - link items from both menu options together
+- pop out full menu - style it
 - generate AI photos for each menu item
 - checkout layout form style
 - flip frontend to Next.js
 - add Stripe payments options
+- create logo

@@ -20,13 +20,14 @@
   <body>
     <div class="welcome-section">
       <img src="pizzaSlice.png" alt="Slice of Pizza" class="pizzaSlice" />
-      <h1 class="welcome-text">Pizza Restaurant</h1>
+      <h1 class="welcome-text">Welcome to Pizza Restaurant</h1>
     </div>
 
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#order">Order</a></li>
         <li><a href="#hours">Hours</a></li>
       </ul>
@@ -35,17 +36,21 @@
     <div class="discount">10% OFF Your First Online Order!</div>
     <article>
       <div id="about" class="about-section">
-        <h2 class="welcomeMessage">
-          Welcome to [Pizza Shop], our passion is crafting the perfect pizza
+        <p class="welcomeMessage">
+          Welcome to Pizza Restaurant! Our passion is crafting the perfect pizza
           with using only the freshest high quality ingredients from our
           partners in the local community!
-        </h2>
+          <br />
+          We are more than just a pizza shop and value our community through our
+          commitment to provide a venue and quality food. Through city wide
+          initiatives we welcome everyone to stop by and give it a try!
+        </p>
         <img class="pizzaShop" src="pizzaShop.png" alt="Pizza Shop" />
       </div>
 
       <div class="howToOrderArea card-body">
         <ul class="howToOrder">
-          <p class="card-title">How To Order:</p>
+          <p class="card-title">How To Order</p>
           <li class="exploreBullet">
             <span class="material-symbols-outlined"> local_pizza </span> Explore
             our menu by clicking on the pizza images to flip through the options
@@ -57,7 +62,7 @@
             buttons.
           </li>
           <li class="clickPizza">
-            <span class="material-symbols-outlined"> local_pizza </span> Click
+            <span class="material-symbols-outlined"> local_pizza </span>
             Click the "View Full Menu" button to bypass clicking through each
             pizza selection below:
           </li>
@@ -123,33 +128,42 @@
           </div>
         </div>
       </div>
-
-      <div class="sideBySide">
-        <aside id="order" class="checkoutSection">
-          <p class="checkoutTitle">Checkout</p>
-          <ul class="checkoutList">
-            <div>Order Items:</div>
-            <li class="orderItem"></li>
-
-            <li class="total">Total: $</li>
-          </ul>
-          <button class="btn btn-success" onclick="location.href='form.html'">
-            Check Out
-          </button>
-          <button class="btn btn-warning">Reset Order</button>
-        </aside>
-
-        <aside id="hours" class="contactArea">
-          <div class="contactInfo">
-            <p>Contact ###-###-####</p>
-            <p>Address: 123 Main Street</p>
-            <p>Citytown USA</p>
-            <p>Monday - Saturday 11:30am - 11:00pm</p>
-            <p>Sunday 11:30am - 7:00pm</p>
-          </div>
-        </aside>
-      </div>
     </article>
+
+    <div id="hours" class="contactArea">
+      <div class="contactInfo">
+        <div class="locationArea">
+          <h3>Location</h3>
+          <p>123 Main Street</p>
+          <p>Citytown, MA 0000</p>
+        </div>
+
+        <div class="phoneContact">
+          <h3>Phone</h3>
+          <p>(978) 555-5555</p>
+        </div>
+      </div>
+
+      <div class="hoursInfo">
+        <h3>Hours</h3>
+        <p>Monday - Thursday 3pm - 10pm</p>
+        <p>Friday - Saturday 11am - 11:30pm</p>
+        <p>Sunday 11am - 7pm</p>
+      </div>
+    </div>
+
+    <div id="order" class="checkoutSection">
+      <p class="checkoutTitle">Checkout</p>
+      <ul class="checkoutList">
+        <div class="orderItemTitle">Order Items:</div>
+        <li class="orderItem"></li>
+        <li class="total">Total: $</li>
+      </ul>
+      <button class="btn btn-success" onclick="location.href='form.html'">
+        Check Out
+      </button>
+      <button class="btn btn-warning">Reset Order</button>
+    </div>
 
     <!-- ! pop out full menu here -->
     <div
