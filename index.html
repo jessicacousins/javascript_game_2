@@ -34,6 +34,7 @@
     </nav>
 
     <div class="discount">10% OFF Your First Online Order!</div>
+
     <article>
       <div id="about" class="about-section">
         <p class="welcomeMessage">
@@ -47,48 +48,50 @@
         </p>
         <img class="pizzaShop" src="pizzaShop.png" alt="Pizza Shop" />
       </div>
+      <hr class="line" />
+      <div class="row">
+        <div class="col-md-3 pizzaDeal1 px-3">
+          <p>Two Cheese Pizza Deal</p>
+          <p>Order 2 Cheese Pizzas with 2 liter soda for $25.00</p>
+        </div>
 
-      <div class="pizzaDeal1">
-        <p>Two Cheese Pizza Deal</p>
-        <p>Order 2 Cheese Pizzas with 2 liter soda for $25.00</p>
+        <div id="menu" class="col-md-3 howToOrderArea card-body px-5">
+          <ul class="howToOrder">
+            <p class="card-title">How To Order</p>
+            <li class="exploreBullet">
+              <span class="material-symbols-outlined"> local_pizza </span>
+              Explore our menu by clicking on the pizza images to flip through
+              the options below.
+            </li>
+            <li class="selectPizza">
+              <span class="material-symbols-outlined"> local_pizza </span>
+              Each pizza is a masterpiece and can be selected by using the + or
+              - buttons.
+            </li>
+            <li class="clickPizza">
+              <span class="material-symbols-outlined"> local_pizza </span>
+              Click the "View Full Menu" button to bypass clicking through each
+              pizza selection below:
+            </li>
+            <button
+              type="button"
+              class="fullMenuBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#menuModal"
+            >
+              View Full Menu
+            </button>
+          </ul>
+        </div>
+
+        <div class="col-md-3 pizzaDeal2 px-3">
+          <p>Kids Eat Free Friday</p>
+          <p>From open until 7pm kids eat free!</p>
+        </div>
       </div>
-
-      <div class="howToOrderArea card-body">
-        <ul class="howToOrder">
-          <p class="card-title">How To Order</p>
-          <li class="exploreBullet">
-            <span class="material-symbols-outlined"> local_pizza </span> Explore
-            our menu by clicking on the pizza images to flip through the options
-            below.
-          </li>
-          <li class="selectPizza">
-            <span class="material-symbols-outlined"> local_pizza </span>
-            Each pizza is a masterpiece and can be selected by using the + or -
-            buttons.
-          </li>
-          <li class="clickPizza">
-            <span class="material-symbols-outlined"> local_pizza </span>
-            Click the "View Full Menu" button to bypass clicking through each
-            pizza selection below:
-          </li>
-          <button
-            type="button"
-            class="fullMenuBtn"
-            data-bs-toggle="modal"
-            data-bs-target="#menuModal"
-          >
-            View Full Menu
-          </button>
-        </ul>
-      </div>
-
-      <div class="pizzaDeal2">
-        <p>Kids Eat Free Friday</p>
-        <p>From open until 7pm kids eat free!</p>
-      </div>
-
-      <div id="menu">
-        <div class="text-center pizzaMenu">Pizza Menu</div>
+      <hr class="line" />
+      <div id="gallery">
+        <div class="text-center pizzaMenu">Pizza Gallery Menu</div>
         <div class="col">
           <div class="col-auto">
             <div id="menuContainer" class="container container-fluid">
@@ -100,12 +103,14 @@
                   src="chesse_pizza.jpg"
                   alt="Cheese Pizza"
                 />
+
                 <div class="quantity-control">
                   <button class="minus">-</button>
                   <span class="quantity">0</span>
                   <button class="plus">+</button>
                 </div>
               </div>
+
               <div id="pepperoni" class="pizzaType">
                 <h3 class="pizzaTitle">Pepperoni</h3>
                 <h4 class="pizzaPrice">$18.99</h4>
