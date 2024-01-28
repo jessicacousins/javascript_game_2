@@ -161,6 +161,11 @@ nav ul li a:hover {
   }
 }
 
+.orderInstructionsDeals {
+  display: flex;
+  flex-direction: row;
+}
+
 .exploreBullet,
 .selectPizza,
 .clickPizza {
@@ -403,58 +408,40 @@ img {
 }
 
 .contactArea {
+  position: absolute;
   display: flex;
-  justify-content: right;
-  margin-right: 20px;
+  justify-content: space-evenly;
   font-size: 1.7rem;
+  margin-top: 1000px;
 }
 
-/* media query smallest and small screens */
-@media screen and (max-width: 767.98px) {
-  .sideBySide {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-    /* background-color: #000; */
-  }
+.footerArea {
+  position: absolute;
+  display: flex;
+  right: 20px;
+  margin-top: 1200px;
+}
 
+/* @media screen and (max-width: 767.98px) {
   .checkoutSection,
   .contactArea {
     width: 100%;
-    /* background-color: #000; */
     margin-top: 0;
   }
 }
 
-/* media query for medium, sorta large, and large screens */
 @media screen and (min-width: 968px) and (max-width: 1199.98px) {
-  .sideBySide {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-    /* background-color: #000; */
-  }
-
   .checkoutSection,
   .contactArea {
     width: 100%;
-    /* background-color: #000; */
     margin-top: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .sideBySide {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-    /* background-color: #000; */
-  }
-
   .checkoutSection,
   .contactArea {
     width: 100%;
-    /* background-color: #000; */
     margin-top: 0;
   }
-}
+} */
