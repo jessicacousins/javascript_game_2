@@ -99,3 +99,19 @@ document.addEventListener("DOMContentLoaded", function () {
   flipPizza(currentPizza);
 });
 
+function adjustForMobileView() {
+  const bodyElement = document.body;
+  const mobileViewBreakpoint = 768; // Width in pixels
+
+  if (window.innerWidth < mobileViewBreakpoint) {
+    bodyElement.classList.add("mobile-view");
+  } else {
+    bodyElement.classList.remove("mobile-view");
+  }
+}
+
+// Listen for resize events
+window.addEventListener("resize", adjustForMobileView);
+
+// Call once on initial load
+adjustForMobileView();

@@ -9,6 +9,32 @@
   font-family: "Abril Fatface", serif;
 }
 
+body.mobile-view .orderInstructionsDeals,
+body.mobile-view .about-section,
+body.mobile-view nav ul,
+body.mobile-view .contactArea,
+body.mobile-view .checkoutSection {
+  flex-direction: column;
+  align-items: center;
+}
+
+body.mobile-view nav ul li {
+  display: block; /* Stack nav items */
+  margin: 10px 0; /* Add some space between stacked items */
+}
+
+body.mobile-view .pizzaType,
+body.mobile-view .pizzaDeal1,
+body.mobile-view .pizzaDeal2,
+body.mobile-view .howToOrderArea {
+  width: 100%; /* Make these elements take full width */
+}
+
+body.mobile-view img {
+  max-width: 100%; /* Ensure images are not wider than the screen */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .discount {
   font-size: 2rem;
   text-align: center;
