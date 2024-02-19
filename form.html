@@ -20,24 +20,27 @@
         <button class="btn btn-primary" onclick="location.href='index.html'">
           Go Back
         </button>
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input
-          type="text"
-          name="address"
-          placeholder="Delivery Address"
-          required
-        />
-        <input
-          type="tel"
-          name="contact"
-          placeholder="Contact Number"
-          required
-        />
-        <textarea
-          name="instructions"
-          placeholder="Special Instructions... allergies etc "
-        ></textarea>
-        <input type="submit" value="Place Order" />
+
+        <div class="input-container">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input
+            type="text"
+            name="address"
+            placeholder="Delivery Address"
+            required
+          />
+          <input
+            type="tel"
+            name="contact"
+            placeholder="Contact Number"
+            required
+          />
+          <textarea
+            name="instructions"
+            placeholder="Special Instructions... allergies etc "
+          ></textarea>
+        </div>
+        <input class="submit" type="submit" value="Order Now" />
       </form>
     </div>
   </body>
