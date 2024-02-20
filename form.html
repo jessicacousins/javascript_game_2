@@ -15,13 +15,9 @@
   <body>
     <div class="container">
       <form id="orderForm">
-        <h2>Checkout Here</h2>
-        <p>Please review your order before placing.</p>
-        <button class="btn btn-primary" onclick="location.href='index.html'">
-          Go Back
-        </button>
-
         <div class="input-container">
+          <p class="titleText">Checkout</p>
+          <p class="orderDirection">Please review your order before placing.</p>
           <input type="text" name="name" placeholder="Your Name" required />
           <input
             type="text"
@@ -39,10 +35,16 @@
             name="instructions"
             placeholder="Special Instructions... allergies etc "
           ></textarea>
+          <div class="actionBtns">
+              <input class="submit" type="submit" value="Order Now" />
+
+              <button class="goBackBtn" onclick="location.href='index.html'">
+              Go Back 
+              </button>
         </div>
-        <input class="submit" type="submit" value="Order Now" />
       </form>
     </div>
+     </div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

@@ -1,31 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
 body {
   background-color: black;
-  color: #92dce5;
+  color: #27d907;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Abril Fatface", serif;
 }
 
 .input-container {
+  box-shadow: 0px 0px 25px 4px rgba(178, 173, 173, 0.2);
   display: flex;
   flex-direction: column;
   gap: 40px;
   border: 1px solid #221b06;
   max-width: 25em;
   min-width: 18em;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 input {
-  background-color: #92dce5;
+  background-color: #fae7b3ea;
   border-radius: 5px;
   font-size: 2rem;
 }
 
 textarea {
   height: 100px;
-  background-color: #92dce5;
+  background-color: #fae7b3ea;
   border-radius: 5px;
   font-size: 2rem;
   text-align: center;
 }
 
+.actionBtns {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
 .submit {
+  background-color: #27d907;
+  margin-right: 20px;
+}
+
+.goBackBtn {
   background-color: #ffbb00;
+  font-size: 2rem;
+  border-radius: 5px;
+  width: 180px;
+}
+
+.submit:hover {
+  background-color: #1eaf05;
+}
+
+.goBackBtn:hover {
+  background-color: #e6a800;
+}
+
+.titleText {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.orderDirection {
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
 }
