@@ -19,25 +19,27 @@ body.mobile-view .checkoutSection {
 }
 
 body.mobile-view nav ul li {
-  display: block; /* Stack nav items */
-  margin: 10px 0; /* Add some space between stacked items */
+  display: block;
+  margin: 10px 0;
 }
 
 body.mobile-view .pizzaType,
 body.mobile-view .pizzaDeal1,
 body.mobile-view .pizzaDeal2,
 body.mobile-view .howToOrderArea {
-  width: 100%; /* Make these elements take full width */
+  width: 100%;
 }
 
 body.mobile-view img {
-  max-width: 100%; /* Ensure images are not wider than the screen */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
 }
 
 .discount {
   font-size: 2rem;
   text-align: center;
+  color: #26d907;
+  letter-spacing: 3px;
 }
 
 .welcome-section {
@@ -124,10 +126,18 @@ nav ul li a:hover {
 
 .about-section {
   display: flex;
-  justify-content: space-between;
-  /* flex-direction: column; */
+  justify-content: center;
   align-items: center;
-  padding-top: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    width: 28rem;
+  }
 }
 
 .welcomeMessage {
@@ -137,14 +147,21 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* width: 700px; */
   font-size: 2.3rem;
   letter-spacing: 2px;
   padding: 20px;
   margin: 20px;
-  border: 1px solid #f0ad4e;
   box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.3);
   border-radius: 7px;
+  width: 750px;
+}
+
+.card-body {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 700px;
 }
 
 .pizzaShop {
@@ -207,7 +224,6 @@ nav ul li a:hover {
 
 .howToOrder {
   display: flex;
-  /* flex: 1; */
   color: #f0ad4e;
   background-color: #222;
   flex-direction: column;
@@ -220,7 +236,6 @@ nav ul li a:hover {
   width: 50rem;
   padding: 2%;
   margin: 20px auto;
-  /* border: 1px solid #f0ad4e; */
   border: none;
   border-radius: 15px;
   box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
@@ -412,6 +427,7 @@ img {
 .orderItemTitle {
   background-color: transparent;
 }
+
 .orderItem {
   background-color: transparent;
 }
@@ -419,6 +435,30 @@ img {
 .total {
   color: #f0ad4e;
   background-color: transparent;
+}
+
+.orderOutBtn {
+  background-color: #27d907;
+  border-radius: 7px;
+  padding: 5px;
+  color: #000;
+}
+
+.resetOrderBtn {
+  background-color: #ffbb00;
+  border-radius: 7px;
+  padding: 5px;
+  color: #000;
+}
+
+.orderOutBtn:hover {
+  background-color: #1eaf05;
+  color: white;
+}
+
+.resetOrderBtn:hover {
+  background-color: #e6a800;
+  color: white;
 }
 
 .checkoutSection h2,

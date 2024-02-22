@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const order = JSON.parse(localStorage.getItem("order") || "{}");
 
+  const total = calculateTotal(order);
+  document.querySelector(".total").textContent = `Total: $${total.toFixed(2)}`;
+
   const form = document.getElementById("orderForm");
   if (form) {
     form.addEventListener("submit", function (event) {

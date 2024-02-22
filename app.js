@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function adjustForMobileView() {
   const bodyElement = document.body;
-  const mobileViewBreakpoint = 768; // Width in pixels
+  const mobileViewBreakpoint = 768;
 
   if (window.innerWidth < mobileViewBreakpoint) {
     bodyElement.classList.add("mobile-view");
@@ -110,8 +110,6 @@ function adjustForMobileView() {
   }
 }
 
-// Listen for resize events
 window.addEventListener("resize", adjustForMobileView);
 
-// Call once on initial load
 adjustForMobileView();
