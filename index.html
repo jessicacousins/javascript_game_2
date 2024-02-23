@@ -26,7 +26,7 @@
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
+        <li><a href="/full_menu.html">Full_Menu</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#order">Order</a></li>
         <li><a href="#hours">Hours</a></li>
@@ -36,26 +36,34 @@
     <div class="discount">10% OFF Your First Online Order!</div>
 
     <article>
-<div id="about" class="about-section">
-  <div>
-    <img class="img-fluid pizzaShop" src="pizzaShop.png" alt="Pizza Shop" />
-  </div>
-  <div>
-    <div class="card welcomeMessage bg-dark text-white">
-      <div class="card-body">
-        <p class="card-text">
-          Welcome to Pizza Restaurant! Our passion is crafting the perfect pizza with using only the freshest high-quality ingredients from our partners in the local community!
-          <br />
-          We are more than just a pizza shop and value our community through our commitment to provide a venue and quality food. Through city-wide initiatives, we welcome everyone to stop by and give it a try!
-        </p>
+      <div id="about" class="about-section">
+        <div>
+          <img
+            class="img-fluid pizzaShop"
+            src="pizzaShop.png"
+            alt="Pizza Shop"
+          />
+        </div>
+        <div>
+          <div class="card welcomeMessage bg-dark text-white">
+            <div class="card-body">
+              <p class="card-text">
+                Welcome to Pizza Restaurant! Our passion is crafting the perfect
+                pizza with using only the freshest high-quality ingredients from
+                our partners in the local community!
+                <br />
+                We are more than just a pizza shop and value our community
+                through our commitment to provide a venue and quality food.
+                Through city-wide initiatives, we welcome everyone to stop by
+                and give it a try!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-
-
-        <div id="menu" class="col-md-3 howToOrderArea card-body px-5">
+      <div id="menu" class="about-section howToOrderArea px-5">
+        <div class="card-body">
           <ul class="howToOrder">
             <p class="card-title">How To Order</p>
             <li class="exploreBullet">
@@ -76,22 +84,19 @@
             <button
               type="button"
               class="fullMenuBtn"
-              data-bs-toggle="modal"
-              data-bs-target="#menuModal"
+              onclick="window.location.href='full_menu.html'"
             >
               View Full Menu
             </button>
           </ul>
         </div>
-
-        <div class="col-md-3 pizzaDeal2 px-3">
-          <p>Kids Eat Free Friday</p>
-          <p>From open until 7pm kids eat free!</p>
-        </div>
       </div>
+
       <hr class="line" />
       <div id="gallery">
-        <div class="text-center pizzaMenu">Pizza Gallery Menu</div>
+        <div id="menuModal" class="text-center pizzaMenu">
+          Pizza Gallery Menu
+        </div>
         <div class="col">
           <div class="col-auto">
             <div id="menuContainer" class="container container-fluid">
@@ -179,8 +184,21 @@
       <button class="resetOrderBtn">Reset Order</button>
     </div>
 
-    <!-- ! pop out full menu here -->
-    <div
+    <footer class="footerArea">Jessica Cousins | Copyright 2024</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
+
+<!-- ! pop out full menu here -->
+<!-- <div
       class="modal fade"
       id="menuModal"
       tabindex="-1"
@@ -232,17 +250,4 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <footer class="footerArea">Jessica Cousins | Copyright 2024</footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="app.js"></script>
-    <script src="form.js"></script>
-  </body>
-</html>
+    </div> -->
