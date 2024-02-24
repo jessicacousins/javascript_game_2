@@ -327,21 +327,47 @@ img {
 }
 
 .pizzaTitle {
-  color: white;
+  color: #fff;
+  font-size: 4rem;
+  padding: 10px 30px 10px 30px;
+  border-radius: 7px;
+  position: absolute;
+  top: 315px;
+  background-color: rgba(19, 1, 1, 0.6);
+  right: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pizzaPrice {
+  color: #fff;
+  font-size: 4rem;
+  padding: 10px 30px 10px 30px;
+  border-radius: 7px;
+  position: absolute;
+  top: 415px;
+  background-color: rgba(19, 1, 1, 0.6);
+  right: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .quantity-control {
   font-size: 2.4rem;
   position: absolute;
-  top: 5px;
-  right: 100px;
+  top: 515px;
+  background-color: rgba(255, 255, 255, 0);
+  right: 440px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .quantity {
-  padding: 20px;
+  padding: 17px;
+  border-radius: 7px;
 }
 
 .minus,
@@ -353,13 +379,13 @@ img {
 
 .minus:hover,
 .plus:hover {
-  background-color: #f4e8c6;
+  background-color: #27d907;
   color: #000;
 }
 
 .quantity-control button {
-  background-color: #f0ad4e;
-  color: white;
+  background-color: #caf0c3;
+  color: #000;
   border: none;
   padding: 5px 10px;
   margin: 0 5px;
@@ -396,10 +422,10 @@ img {
 
 .checkoutSection {
   position: fixed;
-  top: 700px;
+  bottom: 20px;
   right: 20px;
-  width: 100px;
-  max-width: 700px;
+  width: 300px;
+  max-width: 600px;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 10px;
