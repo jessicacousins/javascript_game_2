@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza - Full Menu</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="full_menu.css" />
+
   </head>
   <body>
-    <div id="menuModal" class="card">
+    <div id="menuModal" class="fullMenuArea">
       <div
-        class="modal fade card-body"
+        class="modal fade"
         id="menuModal"
         tabindex="-1"
         aria-labelledby="menuModalLabel"
@@ -18,7 +20,7 @@
         <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="menuModalLabel">Full Menu</h5>
+              <h5 class="modal-title fullMenuTitle" id="menuModalLabel">Full Menu</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -26,7 +28,7 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body pizzaMenuSection">
               <div id="cheeseModal" class="cheesePizzaFull">
                 <p>Cheese Pizza</p>
                 <button class="modal-minus" data-pizza-type="cheese">-</button>
@@ -49,8 +51,58 @@
                 <span class="quantity">0</span>
                 <button class="modal-plus" data-pizza-type="veggie">+</button>
               </div>
+           
+
+              <!-- New Orders Start Here  -->
+
+              <div id="meatLoverModal" class="meatLoverPizzaFull">
+                <p>meatLover Pizza</p>
+                <button class="modal-minus" data-pizza-type="meatLover">
+                  -
+                </button>
+                <span class="quantity">0</span>
+                <button class="modal-plus" data-pizza-type="meatLover">
+                  +
+                </button>
+              </div>
             </div>
-            <div class="modal-footer">
+               </div>
+
+               <div class="appetizersSides">Appetizers & Sides</div>
+             <div class="menu-item" id="frenchFries">
+               <p class="sideItem">French Fries</p>
+              <button class="modal-minus" data-item-type="frenchFries">-</button>
+              <span class="quantity">0</span>
+              <button class="modal-plus" data-item-type="frenchFries">+</button>
+            </div>
+            <div class="menu-item" id="curlyFries">
+              <p class="sideItem">Curly Fries</p>
+              <button class="modal-minus" data-item-type="curlyFries">-</button>
+              <span class="quantity">0</span>
+              <button class="modal-plus" data-item-type="curlyFries">+</button>
+            </div>
+            <div class="menu-item" id="chickenWings">
+              <p class="sideItem">Chicken Wings</p>
+              <button class="modal-minus" data-item-type="chickenWings">-</button>
+              <span class="quantity">0</span>
+              <button class="modal-plus" data-item-type="chickenWings">+</button>
+            </div>
+            <div class="menu-item" id="pizzaRoll">
+             <p class="sideItem">Pizza Roll</p>
+              <button class="modal-minus" data-item-type="pizzaRoll">-</button>
+              <span class="quantity">0</span>
+              <button class="modal-plus" data-item-type="pizzaRoll">+</button>
+            </div>
+            <div class="menu-item" id="chickenFingers">
+              <p class="sideItem">Chicken Fingers</p>
+              <button class="modal-minus" data-item-type="chickenFingers">-</button>
+              <span class="quantity">0</span>
+              <button class="modal-plus" data-item-type="chickenFingers">+</button>
+            </div>
+
+            <!-- New Orders End Here  -->
+
+            <div class="modal-footer footerMenuArea">
               <button
                 type="button"
                 class="btn btn-secondary"
@@ -66,7 +118,6 @@
         </div>
       </div>
     </div>
-
     <script src="app.js"></script>
     <script src="form.js"></script>
   </body>
