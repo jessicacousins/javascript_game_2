@@ -91,37 +91,44 @@ header {
   color: #ffbb00;
 }
 
-/* nav area here  */
-nav {
-  color: white;
-  padding: 10px;
-  text-align: center;
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navbar {
+  font-size: 1.5rem;
+  opacity: 0.9;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  font-size: 3.4rem;
+.navbar-brand {
+  color: #fff !important;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 10px;
+.navbar-nav .nav-link {
+  color: #ffd700 !important;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  letter-spacing: 3px;
+.navbar-nav .nav-link.active {
+  color: #ffd700 !important;
 }
 
-nav ul li a:hover {
-  color: #ffbb00;
-  text-decoration: underline;
+.navbar-nav .nav-link:hover {
+  color: #f0ad4e !important;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-collapse {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    color: #fff;
+  }
+
+  .welcome-text {
+    top: 50%;
+    font-size: 2.3rem;
+  }
 }
 
 .about-section {
@@ -326,43 +333,50 @@ img {
   cursor: pointer;
 }
 
-.pizzaTitle {
-  color: #fff;
-  font-size: 4rem;
-  padding: 10px 30px 10px 30px;
-  border-radius: 7px;
+.pizzaTitle,
+.pizzaPrice,
+.quantity-control {
   position: absolute;
-  top: 315px;
+  width: 50%;
+  left: 25%;
+  text-align: center;
+}
+
+.pizzaTitle {
+  bottom: 220px;
+  font-size: 5rem;
   background-color: rgba(19, 1, 1, 0.6);
-  right: 430px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* background-color: rgba(255, 255, 255, 0); */
 }
 
 .pizzaPrice {
-  color: #fff;
-  font-size: 4rem;
-  padding: 10px 30px 10px 30px;
-  border-radius: 7px;
-  position: absolute;
-  top: 415px;
+  bottom: 120px;
+  font-size: 3rem;
   background-color: rgba(19, 1, 1, 0.6);
-  right: 430px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* background-color: rgba(255, 255, 255, 0); */
 }
 
 .quantity-control {
-  font-size: 2.4rem;
-  position: absolute;
-  top: 515px;
+  font-size: 2.3rem;
+  bottom: 20px;
   background-color: rgba(255, 255, 255, 0);
-  right: 440px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pizzaType {
+    width: 200px;
+    height: 200px;
+  }
+
+  .pizzaTitle,
+  .pizzaPrice {
+    font-size: 3rem;
+  }
+
+  .quantity-control {
+    font-size: 2rem;
+  }
 }
 
 .quantity {
@@ -519,27 +533,3 @@ img {
   right: 20px;
   margin-top: 1200px;
 }
-
-/* @media screen and (max-width: 767.98px) {
-  .checkoutSection,
-  .contactArea {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 968px) and (max-width: 1199.98px) {
-  .checkoutSection,
-  .contactArea {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .checkoutSection,
-  .contactArea {
-    width: 100%;
-    margin-top: 0;
-  }
-} */
