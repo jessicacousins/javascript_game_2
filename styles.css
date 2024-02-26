@@ -451,12 +451,6 @@ img {
   border: 2px solid #f0ad4e;
 }
 
-@media screen and (max-width: 767.98px) {
-  .checkoutSection {
-    top: 270px;
-  }
-}
-
 .checkoutTitle {
   font-size: 4rem;
   text-decoration: underline;
