@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: #333;
 }
 
@@ -33,7 +33,7 @@ body {
   padding: 15px 0;
 }
 
-.menu-item {
+.menu-item menuItemChoice {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,4 +61,68 @@ body {
   .sideItem {
     font-size: 2rem;
   }
+} */
+
+/* ! styles test area 1  */
+
+.fullMenuArea {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.pizzaMenuSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+.appetizersSides {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .pizzaMenuSection,
+  .appetizersSides {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cheesePizzaFull,
+.pepperoniPizzaFull,
+.veggiePizzaFull,
+.meatLoverPizzaFull,
+.menu-item {
+  padding: 10px;
+  color: #f0ad4e;
+  background-color: #222;
+  font-size: 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.fullMenuTitle,
+.sideItem,
+button {
+  color: #fff;
+}
+
+button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+.quantity {
+  background-color: #555;
+  color: #27d907;
+  border-radius: 15px;
+  padding: 2px 5px;
+  margin: 0 10px;
 }
