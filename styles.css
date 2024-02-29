@@ -508,8 +508,7 @@ img {
   font-size: 1.7rem;
 }
 
-.checkoutSection,
-.contactArea {
+.checkoutSection {
   width: 48%;
 }
 
@@ -518,7 +517,13 @@ img {
   display: flex;
   justify-content: space-evenly;
   font-size: 1.7rem;
-  margin-top: 1000px;
+  margin-top: 40%;
+  margin-left: 40%;
+}
+
+.contactInfo {
+  color: rgb(239, 7, 46);
+  margin-right: 30%;
 }
 
 .footerArea {
