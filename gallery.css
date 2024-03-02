@@ -1,0 +1,103 @@
+.pizzaMenu {
+  font-size: 5.5rem;
+  color: #ffbb00;
+  display: flex;
+  flex-direction: start;
+  margin-left: 160px;
+  text-decoration: underline;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pizzaType {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#pepperoni,
+#veggie {
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pizzaTitle,
+.pizzaPrice,
+.quantity-control {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  text-align: center;
+}
+
+.pizzaTitle {
+  bottom: 220px;
+  font-size: 5rem;
+  background-color: rgba(19, 1, 1, 0.6);
+}
+
+.pizzaPrice {
+  bottom: 120px;
+  font-size: 3rem;
+  background-color: rgba(19, 1, 1, 0.6);
+}
+
+.quantity-control {
+  font-size: 2.3rem;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.quantity {
+  padding: 17px;
+  border-radius: 7px;
+}
+
+.minus,
+.plus {
+  width: 80px;
+  font-weight: 900;
+  border-radius: 7px;
+}
+
+.minus:hover,
+.plus:hover {
+  background-color: #27d907;
+  color: #000;
+}
+
+.quantity-control button {
+  background-color: #caf0c3;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.quantity-control span {
+  min-width: 20px;
+  text-align: center;
+}

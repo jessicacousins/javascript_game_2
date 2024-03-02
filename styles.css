@@ -35,16 +35,44 @@ body.mobile-view img {
   height: auto;
 }
 
-.discount {
-  font-size: 2rem;
-  text-align: center;
-  color: #26d907;
-  letter-spacing: 3px;
-}
-
+/* ! Welcome Section Here  */
 .welcome-section {
   position: relative;
   text-align: center;
+}
+
+.welcome-text {
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background: rgba(251, 55, 1, 0.744);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .welcome-text {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-text {
+    font-size: 7vw;
+  }
 }
 
 .pizzaSlice {
@@ -66,71 +94,15 @@ body.mobile-view img {
   }
 }
 
-.welcome-text {
-  position: absolute;
-  font-size: 5rem;
-  color: #fff;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+/* ! 10% Discount Here  */
+.discount {
+  font-size: 2rem;
+  text-align: center;
+  color: #26d907;
+  letter-spacing: 3px;
 }
 
-header {
-  font-size: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 60px 0 auto;
-  color: #ffbb00;
-}
-
-.navbar {
-  font-size: 1.5rem;
-  opacity: 0.9;
-}
-
-.navbar-brand {
-  color: #fff !important;
-}
-
-.navbar-nav .nav-link {
-  color: #ffd700 !important;
-}
-
-.navbar-nav .nav-link.active {
-  color: #ffd700 !important;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #f0ad4e !important;
-}
-
-.navbar-toggler {
-  border-color: #fff;
-}
-
-.navbar-collapse {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-@media (max-width: 991px) {
-  .navbar-nav .nav-link {
-    color: #fff;
-  }
-
-  .welcome-text {
-    top: 50%;
-    font-size: 2.3rem;
-  }
-}
-
+/* ! About Section - How To Order Area  */
 .about-section {
   display: flex;
   justify-content: center;
@@ -145,25 +117,6 @@ header {
     flex-direction: column;
     width: 28rem;
   }
-  .welcomeText {
-    font-size: 1rem;
-  }
-}
-
-.welcome-text {
-  position: absolute;
-  font-size: 2.5rem;
-  color: #fff;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  background: rgba(251, 55, 1, 0.744);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .card-body {
@@ -173,6 +126,78 @@ header {
   text-align: center;
   width: 700px;
 }
+
+.howToOrder {
+  display: flex;
+  color: #f0ad4e;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  width: 50rem;
+  padding: 2%;
+  margin: 20px auto;
+  border: 1px solid #27d907;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px rgba(0, 255, 26, 0.56);
+}
+
+.card-title {
+  font-size: 3.5rem;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  margin-bottom: 40px !important;
+}
+
+.exploreBullet,
+.selectPizza,
+.clickPizza {
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.material-symbols-outlined {
+  color: #f0ad4e;
+}
+
+@media (max-width: 992px) {
+  .howToOrderArea,
+  .about-section,
+  .welcomeMessage {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.fullMenuBtn {
+  font-size: 2rem !important;
+  padding: 15px 30px;
+  background-color: #ffbb00;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.fullMenuBtn:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  animation: wiggle 0.5s ease-in-out;
+}
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+/* ! Pizza Shop Picture Here  */
 
 .pizzaShop {
   display: flex;
@@ -219,229 +244,23 @@ header {
   flex-direction: row;
 }
 
-.exploreBullet,
-.selectPizza,
-.clickPizza {
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-}
+/* ! Contact Area - Location, Phone, Hours  */
 
-.material-symbols-outlined {
-  color: #f0ad4e;
-}
-
-.howToOrder {
-  display: flex;
-  color: #f0ad4e;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  list-style-type: none;
-  font-size: 2.3rem;
-  letter-spacing: 2px;
-  padding-left: 20px;
-  width: 50rem;
-  padding: 2%;
-  margin: 20px auto;
-  /* border: none; */
-  border: 1px solid #27d907;
-  border-radius: 15px;
-  box-shadow: 0px 0px 5px rgba(0, 255, 26, 0.56);
-}
-
-.card-title {
-  font-size: 3.5rem;
-  text-decoration: underline;
-  letter-spacing: 2px;
-  margin-bottom: 40px !important;
-}
-
-@media (max-width: 992px) {
-  .howToOrderArea,
-  .about-section,
-  .welcomeMessage {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .welcomeText {
-    font-size: 1rem;
-  }
-}
-
-@keyframes wiggle {
-  0%,
-  100% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-}
-
-.fullMenuBtn {
-  font-size: 2rem !important;
-  padding: 15px 30px;
-  background-color: #ffbb00;
-  color: #000;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.fullMenuBtn:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  animation: wiggle 0.5s ease-in-out;
-}
-
-.pizzaMenu {
-  font-size: 5.5rem;
-  color: #ffbb00;
-  display: flex;
-  flex-direction: start;
-  margin-left: 160px;
-  text-decoration: underline;
-}
-
-.container {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.pizzaType {
-  width: 50%;
-  height: 50%;
+.contactArea {
   position: absolute;
-  backface-visibility: hidden;
-  transition: transform 2s;
-  transform-style: preserve-3d;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  justify-content: space-evenly;
+  font-size: 1.7rem;
+  margin-top: 40%;
+  margin-left: 40%;
 }
 
-#pepperoni,
-#veggie {
-  transform: rotateY(180deg);
+.contactInfo {
+  color: rgb(239, 7, 46);
+  margin-right: 30%;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.pizzaTitle,
-.pizzaPrice,
-.quantity-control {
-  position: absolute;
-  width: 50%;
-  left: 25%;
-  text-align: center;
-}
-
-.pizzaTitle {
-  bottom: 220px;
-  font-size: 5rem;
-  background-color: rgba(19, 1, 1, 0.6);
-  /* background-color: rgba(255, 255, 255, 0); */
-}
-
-.pizzaPrice {
-  bottom: 120px;
-  font-size: 3rem;
-  background-color: rgba(19, 1, 1, 0.6);
-  /* background-color: rgba(255, 255, 255, 0); */
-}
-
-.quantity-control {
-  font-size: 2.3rem;
-  bottom: 20px;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .pizzaType {
-    width: 200px;
-    height: 200px;
-  }
-
-  .pizzaTitle,
-  .pizzaPrice {
-    font-size: 3rem;
-  }
-
-  .quantity-control {
-    font-size: 2rem;
-  }
-  .welcomeText {
-    font-size: 1rem;
-  }
-}
-
-.quantity {
-  padding: 17px;
-  border-radius: 7px;
-}
-
-.minus,
-.plus {
-  width: 80px;
-  font-weight: 900;
-  border-radius: 7px;
-}
-
-.minus:hover,
-.plus:hover {
-  background-color: #27d907;
-  color: #000;
-}
-
-.quantity-control button {
-  background-color: #caf0c3;
-  color: #000;
-  border: none;
-  padding: 5px 10px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.quantity-control span {
-  min-width: 20px;
-  text-align: center;
-}
-
-.pizzaDeal1 {
-  border: 3px dotted #f0ad4e;
-  margin-left: 30px;
-  text-align: center;
-  height: 50%;
-  border-radius: 10px;
-  font-size: 2.3rem;
-}
-
-.pizzaDeal2 {
-  border: 3px dotted #f0ad4e;
-  margin-right: 30px;
-  text-align: center;
-  height: 50%;
-  border-radius: 10px;
-  font-size: 2.3rem;
-}
-
-.row .col-md-3.pizzaDeal1,
-.row .col-md-3.pizzaDeal2 {
-  margin-top: 300px;
-}
+/* ! Checkout Section Here  */
 
 .checkoutSection {
   position: fixed;
@@ -458,6 +277,17 @@ img {
   overflow-y: auto;
   max-height: 80vh;
   border: 2px solid #f0ad4e;
+}
+
+.checkoutSection h2,
+.checkoutSection ul,
+.checkoutSection button {
+  margin-left: 20px;
+  font-size: 1.7rem;
+}
+
+.checkoutSection {
+  width: 48%;
 }
 
 .checkoutTitle {
@@ -510,34 +340,30 @@ img {
   color: white;
 }
 
-.checkoutSection h2,
-.checkoutSection ul,
-.checkoutSection button {
-  margin-left: 20px;
-  font-size: 1.7rem;
-}
-
-.checkoutSection {
-  width: 48%;
-}
-
-.contactArea {
-  position: absolute;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 1.7rem;
-  margin-top: 40%;
-  margin-left: 40%;
-}
-
-.contactInfo {
-  color: rgb(239, 7, 46);
-  margin-right: 30%;
-}
+/* ! Footer Area  */
 
 .footerArea {
   position: absolute;
   display: flex;
   right: 20px;
   margin-top: 1200px;
+}
+
+@media (max-width: 768px) {
+  .pizzaType {
+    width: 200px;
+    height: 200px;
+  }
+
+  .pizzaTitle,
+  .pizzaPrice {
+    font-size: 3rem;
+  }
+
+  .quantity-control {
+    font-size: 2rem;
+  }
+  .welcome-text {
+    font-size: 1rem;
+  }
 }
