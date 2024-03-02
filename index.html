@@ -70,6 +70,15 @@
     <div class="welcome-section">
       <img src="pizzaSlice.png" alt="Slice of Pizza" class="pizzaSlice" />
       <h1 class="welcome-text">Welcome to Pizza Restaurant</h1>
+      <p class="welcome-text">
+        Welcome to Pizza Restaurant! Our passion is crafting the perfect pizza
+        with using only the freshest high-quality ingredients from our partners
+        in the local community!
+        <br />
+        We are more than just a pizza shop and value our community through our
+        commitment to provide a venue and quality food. Through city-wide
+        initiatives, we welcome everyone to stop by and give it a try!
+      </p>
     </div>
 
     <!-- <nav>
@@ -85,59 +94,40 @@
     <div class="discount">10% OFF Your First Online Order!</div>
 
     <article>
-      <div id="about" class="about-section">
-        <div>
-          <img
-            class="img-fluid pizzaShop"
-            src="pizzaShop.png"
-            alt="Pizza Shop"
-          />
-        </div>
-        <div>
-          <div class="card welcomeMessage bg-dark text-white">
-            <div class="card-body">
-              <p class="card-text">
-                Welcome to Pizza Restaurant! Our passion is crafting the perfect
-                pizza with using only the freshest high-quality ingredients from
-                our partners in the local community!
-                <br />
-                We are more than just a pizza shop and value our community
-                through our commitment to provide a venue and quality food.
-                Through city-wide initiatives, we welcome everyone to stop by
-                and give it a try!
-              </p>
-            </div>
+      <div class="gridArea">
+        <div id="menu" class="about-section howToOrderArea px-5">
+          <div class="card-body">
+            <ul class="howToOrder">
+              <p class="card-title">How To Order</p>
+              <li class="exploreBullet">
+                <span class="material-symbols-outlined"> local_pizza </span>
+                Explore our menu by clicking on the pizza images to flip through
+                the options below
+              </li>
+              <li class="clickPizza">
+                <span class="material-symbols-outlined"> local_pizza </span>
+                Click the "View Full Menu" button to bypass clicking through
+                each pizza selection below:
+              </li>
+              <button
+                type="button"
+                class="fullMenuBtn"
+                onclick="window.location.href='full_menu.html'"
+              >
+                View Full Menu
+              </button>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <div id="menu" class="about-section howToOrderArea px-5">
-        <div class="card-body">
-          <ul class="howToOrder">
-            <p class="card-title">How To Order</p>
-            <li class="exploreBullet">
-              <span class="material-symbols-outlined"> local_pizza </span>
-              Explore our menu by clicking on the pizza images to flip through
-              the options below.
-            </li>
-            <li class="selectPizza">
-              <span class="material-symbols-outlined"> local_pizza </span>
-              Each pizza is a masterpiece and can be selected by using the + or
-              - buttons.
-            </li>
-            <li class="clickPizza">
-              <span class="material-symbols-outlined"> local_pizza </span>
-              Click the "View Full Menu" button to bypass clicking through each
-              pizza selection below:
-            </li>
-            <button
-              type="button"
-              class="fullMenuBtn"
-              onclick="window.location.href='full_menu.html'"
-            >
-              View Full Menu
-            </button>
-          </ul>
+        <div id="about" class="about-section">
+          <div>
+            <img
+              class="img-fluid pizzaShop"
+              src="pizzaShop.png"
+              alt="Pizza Shop"
+            />
+          </div>
         </div>
       </div>
 
