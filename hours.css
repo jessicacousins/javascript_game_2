@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+* {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #000;
+}
+
+.container {
+  background-color: #000;
+}
+
+.contactTitle {
+  margin-top: 80px;
+}
+
+/* ! Contact Area - Location, Phone, Hours  */
+
+.contactArea {
+  background-color: #000;
+  color: #27d907;
+}
+
+/* ! Checkout Section Here  */
+
+.checkoutSection {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: auto;
+  max-height: 80vh;
+  border: 2px solid #f0ad4e;
+}
+
+.checkoutSection h2,
+.checkoutSection ul,
+.checkoutSection button {
+  margin-left: 20px;
+  font-size: 1.7rem;
+}
+
+.checkoutSection {
+  width: 48%;
+}
+
+.checkoutTitle {
+  font-size: 4rem;
+  text-decoration: underline;
+  color: #f0ad4e;
+  background-color: transparent;
+}
+
+.checkoutList {
+  font-size: 1.5em;
+  list-style: none;
+  padding: 0;
+  background-color: transparent;
+}
+.orderItemTitle {
+  background-color: transparent;
+}
+
+.orderItem {
+  background-color: transparent;
+}
+
+.total {
+  color: #f0ad4e;
+  background-color: transparent;
+}
+
+.orderOutBtn {
+  background-color: #27d907;
+  border-radius: 7px;
+  padding: 5px;
+  color: #000;
+}
+
+.resetOrderBtn {
+  background-color: #ffbb00;
+  border-radius: 7px;
+  padding: 5px;
+  color: #000;
+}
+
+.orderOutBtn:hover {
+  background-color: #1eaf05;
+  color: white;
+}
+
+.resetOrderBtn:hover {
+  background-color: #e6a800;
+  color: white;
+}

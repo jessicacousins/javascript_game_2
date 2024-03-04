@@ -244,22 +244,6 @@ body.mobile-view img {
   flex-direction: row;
 }
 
-/* ! Contact Area - Location, Phone, Hours  */
-
-.contactArea {
-  position: absolute;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 1.7rem;
-  margin-top: 40%;
-  margin-left: 40%;
-}
-
-.contactInfo {
-  color: rgb(239, 7, 46);
-  margin-right: 30%;
-}
-
 /* ! Checkout Section Here  */
 
 .checkoutSection {
@@ -346,7 +330,6 @@ body.mobile-view img {
   position: absolute;
   display: flex;
   right: 20px;
-  margin-top: 1200px;
 }
 
 @media (max-width: 768px) {

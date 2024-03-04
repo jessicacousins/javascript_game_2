@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Area here  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">PizzaLogoHere</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/full_menu.html">Full Menu</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/gallery.html"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/form.html"
+                >Order</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/hours.html"
+                >Hours</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Gallery Here  -->
+    <div id="gallery">
+      <div id="menuModal" class="text-center pizzaMenu">Pizza Gallery Menu</div>
+      <div class="col">
+        <div class="col-auto">
+          <div id="menuContainer" class="container container-fluid">
+            <div id="cheese" class="pizzaType">
+              <h3 class="pizzaTitle">Cheese</h3>
+              <h4 class="pizzaPrice">$15.99</h4>
+              <img
+                class="img-fluid"
+                src="chesse_pizza.jpg"
+                alt="Cheese Pizza"
+              />
+
+              <div class="quantity-control">
+                <button class="minus">-</button>
+                <span class="quantity">0</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+
+            <div id="pepperoni" class="pizzaType">
+              <h3 class="pizzaTitle">Pepperoni</h3>
+              <h4 class="pizzaPrice">$18.99</h4>
+              <img
+                class="img-fluid"
+                src="pepperoni_pizza.jpg"
+                alt="Pepperoni Pizza"
+              />
+              <div class="quantity-control">
+                <button class="minus">-</button>
+                <span class="quantity">0</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div id="veggie" class="pizzaType">
+              <h3 class="pizzaTitle">Veggie</h3>
+              <h4 class="pizzaPrice">$17.99</h4>
+              <img
+                class="img-fluid"
+                src="veggie_pizza.jpg"
+                alt="Veggie Pizza"
+              />
+              <div class="quantity-control">
+                <button class="minus">-</button>
+                <span class="quantity">0</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Here  -->
+    <script src="app.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>

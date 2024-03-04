@@ -1,9 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  color: white;
+  font-family: "Abril Fatface", serif;
+}
+
 .pizzaMenu {
   font-size: 5.5rem;
   color: #ffbb00;
   display: flex;
   flex-direction: start;
-  margin-left: 160px;
+  text-align: center;
+  align-items: center;
+  margin-top: 80px;
   text-decoration: underline;
 }
 
