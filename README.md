@@ -54,12 +54,10 @@ node server.js
 ## TODO:
 
 - add more pizza options
-- pop out full menu - style it
 - generate AI photos for each menu item
-- checkout layout form style
 - flip frontend to Next.js
 - add Stripe payments options
-- create logo
+- organize adminPanel dashboard
 
 ## Proprietary Software License Agreement
 

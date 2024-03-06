@@ -102,101 +102,6 @@ body.mobile-view img {
   letter-spacing: 3px;
 }
 
-/* ! About Section - How To Order Area  */
-.about-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-    width: 28rem;
-  }
-}
-
-.card-body {
-  display: block;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 700px;
-}
-
-.howToOrder {
-  display: flex;
-  color: #f0ad4e;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  list-style-type: none;
-  font-size: 2.3rem;
-  letter-spacing: 2px;
-  padding-left: 20px;
-  width: 50rem;
-  padding: 2%;
-  margin: 20px auto;
-  border: 1px solid #27d907;
-  border-radius: 15px;
-  box-shadow: 0px 0px 5px rgba(0, 255, 26, 0.56);
-}
-
-.card-title {
-  font-size: 3.5rem;
-  text-decoration: underline;
-  letter-spacing: 2px;
-  margin-bottom: 40px !important;
-}
-
-.exploreBullet,
-.selectPizza,
-.clickPizza {
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-}
-
-.material-symbols-outlined {
-  color: #f0ad4e;
-}
-
-@media (max-width: 992px) {
-  .howToOrderArea,
-  .about-section,
-  .welcomeMessage {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-.fullMenuBtn {
-  font-size: 2rem !important;
-  padding: 15px 30px;
-  background-color: #ffbb00;
-  color: #000;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.fullMenuBtn:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  animation: wiggle 0.5s ease-in-out;
-}
-@keyframes wiggle {
-  0%,
-  100% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-}
-
 /* ! Pizza Shop Picture Here  */
 
 .pizzaShop {
@@ -245,7 +150,6 @@ body.mobile-view img {
 }
 
 /* ! Checkout Section Here  */
-
 .checkoutSection {
   position: fixed;
   bottom: 20px;

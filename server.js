@@ -40,6 +40,14 @@ app.post("/api/orders", (req, res) => {
     });
 });
 
+// GET orders
+app.get("/api/orders", (req, res) => {
+  console.log("GET /api/orders route hit");
+  Order.find()
+    .then((orders) => res.json(orders))
+    .catch((err) => res.status(400).json("Error: " + err));
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
