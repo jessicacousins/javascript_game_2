@@ -70,6 +70,8 @@
         </div>
       </div>
     </nav>
+
+    <!-- Menu Area Here  -->
     <div class="menuArea">
       <div class="container mt-5">
         <div class="row p-3">
@@ -82,8 +84,9 @@
           </div>
         </div>
         <div class="row" id="menuContainer">
-          <div class="col-md-4 mb-4" id="cheeseModal">
-            <div class="card pizza-card">
+          <!-- Cheese Pizza Card -->
+          <div class="col-md-4 mb-4">
+            <div class="card pizza-card pizzaType" id="cheese">
               <img
                 src="chesse_pizza.jpg"
                 class="card-img-top img-fluid"
@@ -92,16 +95,26 @@
               <div class="card-body">
                 <h5 class="card-title">Cheese Pizza</h5>
                 <p class="card-text">$15.99</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <button class="btn btn-primary minus">-</button>
+                <div
+                  class="d-flex justify-content-between align-items-center quantity-control"
+                >
+                  <button
+                    class="btn btn-primary minus"
+                    data-pizza-type="cheese"
+                  >
+                    -
+                  </button>
                   <span class="quantity">0</span>
-                  <button class="btn btn-primary plus">+</button>
+                  <button class="btn btn-primary plus" data-pizza-type="cheese">
+                    +
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4" id="pepperoniModal">
-            <div class="card pizza-card">
+          <!-- Pepperoni Pizza Card -->
+          <div class="col-md-4 mb-4">
+            <div class="card pizza-card pizzaType" id="pepperoni">
               <img
                 src="pepperoni_pizza.jpg"
                 class="card-img-top img-fluid"
@@ -110,16 +123,29 @@
               <div class="card-body">
                 <h5 class="card-title">Pepperoni Pizza</h5>
                 <p class="card-text">$18.99</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <button class="btn btn-primary minus">-</button>
+                <div
+                  class="d-flex justify-content-between align-items-center quantity-control"
+                >
+                  <button
+                    class="btn btn-primary minus"
+                    data-pizza-type="pepperoni"
+                  >
+                    -
+                  </button>
                   <span class="quantity">0</span>
-                  <button class="btn btn-primary plus">+</button>
+                  <button
+                    class="btn btn-primary plus"
+                    data-pizza-type="pepperoni"
+                  >
+                    +
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4" id="veggieModal">
-            <div class="card pizza-card">
+          <!-- Veggie Pizza Card -->
+          <div class="col-md-4 mb-4">
+            <div class="card pizza-card pizzaType" id="veggie">
               <img
                 src="veggie_pizza.jpg"
                 class="card-img-top img-fluid"
@@ -128,10 +154,19 @@
               <div class="card-body">
                 <h5 class="card-title">Veggie Pizza</h5>
                 <p class="card-text">$17.99</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <button class="btn btn-primary minus">-</button>
+                <div
+                  class="d-flex justify-content-between align-items-center quantity-control"
+                >
+                  <button
+                    class="btn btn-primary minus"
+                    data-pizza-type="veggie"
+                  >
+                    -
+                  </button>
                   <span class="quantity">0</span>
-                  <button class="btn btn-primary plus">+</button>
+                  <button class="btn btn-primary plus" data-pizza-type="veggie">
+                    +
+                  </button>
                 </div>
               </div>
             </div>
