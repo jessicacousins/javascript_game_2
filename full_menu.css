@@ -27,6 +27,7 @@ body {
   transition: transform 0.5s;
   cursor: pointer;
 }
+
 .pizza-card:hover {
   transform: scale(1.05);
 }
@@ -34,6 +35,10 @@ body {
 .menuArea {
   min-height: calc(100vh);
   background-color: #000;
+}
+
+.minus {
+  background-color: #ff0000;
 }
 
 /* ! Checkout Section Here  */
@@ -96,13 +101,15 @@ body {
   border-radius: 7px;
   padding: 5px;
   color: #000;
+  border: none;
 }
 
 .resetOrderBtn {
-  background-color: #ffbb00;
+  background-color: #ff0000;
   border-radius: 7px;
   padding: 5px;
   color: #000;
+  border: none;
 }
 
 .orderOutBtn:hover {
@@ -111,6 +118,6 @@ body {
 }
 
 .resetOrderBtn:hover {
-  background-color: #e6a800;
+  background-color: #ff000067;
   color: white;
 }

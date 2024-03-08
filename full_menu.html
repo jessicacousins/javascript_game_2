@@ -98,14 +98,11 @@
                 <div
                   class="d-flex justify-content-between align-items-center quantity-control"
                 >
-                  <button
-                    class="btn btn-primary minus"
-                    data-pizza-type="cheese"
-                  >
+                  <button class="btn btn-danger minus" data-pizza-type="cheese">
                     -
                   </button>
                   <span class="quantity">0</span>
-                  <button class="btn btn-primary plus" data-pizza-type="cheese">
+                  <button class="btn btn-success plus" data-pizza-type="cheese">
                     +
                   </button>
                 </div>
@@ -127,14 +124,14 @@
                   class="d-flex justify-content-between align-items-center quantity-control"
                 >
                   <button
-                    class="btn btn-primary minus"
+                    class="btn btn-danger minus"
                     data-pizza-type="pepperoni"
                   >
                     -
                   </button>
                   <span class="quantity">0</span>
                   <button
-                    class="btn btn-primary plus"
+                    class="btn btn-success plus"
                     data-pizza-type="pepperoni"
                   >
                     +
@@ -157,14 +154,11 @@
                 <div
                   class="d-flex justify-content-between align-items-center quantity-control"
                 >
-                  <button
-                    class="btn btn-primary minus"
-                    data-pizza-type="veggie"
-                  >
+                  <button class="btn btn-danger minus" data-pizza-type="veggie">
                     -
                   </button>
                   <span class="quantity">0</span>
-                  <button class="btn btn-primary plus" data-pizza-type="veggie">
+                  <button class="btn btn-success plus" data-pizza-type="veggie">
                     +
                   </button>
                 </div>
@@ -183,10 +177,13 @@
         <li class="orderItem"></li>
         <li class="total">Total: $</li>
       </ul>
-      <button class="orderOutBtn" onclick="location.href='form.html'">
+      <button
+        class="orderOutBtn btn btn-success"
+        onclick="location.href='form.html'"
+      >
         Check Out
       </button>
-      <button class="resetOrderBtn">Reset Order</button>
+      <button class="resetOrderBtn btn btn-danger">Reset Order</button>
     </div>
     <!-- Bootstrap Script  -->
     <script
