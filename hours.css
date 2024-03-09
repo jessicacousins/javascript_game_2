@@ -28,6 +28,16 @@ body {
   color: #c2c2f0;
 }
 
+/* .cardArea {
+  border-color: #f0ad4e;
+  color: white !important;
+} */
+
+.card:hover {
+  border: none !important;
+  box-shadow: 0 0 8px 2px rgb(240, 173, 78);
+}
+
 /* ! Checkout Section Here  */
 
 .checkoutSection {
@@ -44,7 +54,7 @@ body {
   z-index: 1000;
   overflow-y: auto;
   max-height: 80vh;
-  border: 2px solid #f0ad4e;
+  border: 2px solid rgb(240, 173, 78);
 }
 
 .checkoutSection h2,
